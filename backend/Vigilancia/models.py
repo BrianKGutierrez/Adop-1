@@ -25,6 +25,8 @@ class Vigilancia(models.Model):
     fk_funcionario = models.ForeignKey(Funcionario, on_delete=models.CASCADE, null=True, default=None)
     fk_ente = models.ForeignKey(Ente, on_delete=models.CASCADE, null=True, default=None)
     
+    
+
     objetivo = models.TextField()
     cant_dias = models.IntegerField(default=0)
     fecha_inicio = models.DateTimeField(null=False)
@@ -60,3 +62,4 @@ class PersonalVigilancia(models.Model):
     hora_fin = models.TimeField(null=False)
     duracion = models.IntegerField(null=False)
     asignado = models.BooleanField(default=False)
+    #

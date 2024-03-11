@@ -21,7 +21,7 @@ export function LoginAdmin(props) {
   }, []);
 
   // window.location.replace("http://localhost:3000/login")
-
+  //sera que ya nos vamos? jaja se la creyeron
   return (
     <div className="Area">
       <div className="title-ministerio">

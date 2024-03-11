@@ -50,7 +50,7 @@ function MenuLeft(props) {
         </Menu.Item>
       )} */}
 
-      {((auth?.usuario?.rol === 1) || (auth?.usuario?.rol ===3)) && (
+      {/* {((auth?.usuario?.rol === 1) || (auth?.usuario?.rol ===3)) && (
         <Menu.Item
           as={Link}
           to={"/admin/vigilancia"}
@@ -59,7 +59,7 @@ function MenuLeft(props) {
           <Icon name="hospital" className="icono-side-bar" />
           Vigilancia
         </Menu.Item>
-      )}
+      )} */}
 
       {/* {empleados = && (
         <Menu.Item
@@ -71,7 +71,7 @@ function MenuLeft(props) {
           Pacientes
         </Menu.Item>
       )} */}
-      <Menu.Item className="header_class">
+      {/* <Menu.Item className="header_class">
         
           <Icon name="chart bar" className="icono-side-bar" />
           <Dropdown item text="Tableros">
@@ -108,7 +108,7 @@ function MenuLeft(props) {
           </Dropdown>
         
       
-      </Menu.Item>
+      </Menu.Item> */}
 
       {auth?.usuario?.rol === 1 && (
         <Menu.Item
@@ -120,14 +120,7 @@ function MenuLeft(props) {
           Usuarios
         </Menu.Item>
       )}
-      <Menu.Item
-        as={Link}
-        to={"/admin/contrasena"}
-        active={pathname === "/admin/contrasena"}
-      >
-        <Icon name="pencil alternate" className="icono-side-bar" />
-        Gestion de Contraseña
-      </Menu.Item>
+      
     </Menu>
   );
 }

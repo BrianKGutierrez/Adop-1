@@ -6,7 +6,7 @@ export function HeaderPage(props) {
   return (
     <>
        <div className="header-page-admin">
-      <h1 >{title} {regional? `UNIDAD REGIONAL  ${regional}`:null}</h1>
+      {/* <h1 >{title} {regional? `UNIDAD REGIONAL  ${regional}`:null}</h1> */}
     </div>
     <hr/>
     <br/>
